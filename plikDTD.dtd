@@ -1,0 +1,40 @@
+<!ELEMENT watchingLibrary (authors,description,types,genres,countries,list,footer)>
+<!ELEMENT authors (author+)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT types (type+)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT genres (genre*)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT countries (country*)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT list (item+)>
+<!ELEMENT item ((title,release,creator,ageLimit,awards,rate,time)|(title,year,creator,parts,ageLimit,awards,rate))>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT release (#PCDATA)>
+<!ELEMENT creator (#PCDATA)>
+<!ELEMENT ageLimit (#PCDATA)>
+<!ELEMENT awards (wins,nominations)>
+<!ELEMENT wins (#PCDATA)>
+<!ELEMENT nominations (#PCDATA)>
+<!ELEMENT rate (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT parts (seasons,episodes)>
+<!ELEMENT seasons (#PCDATA)>
+<!ELEMENT episodes (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT footer (#PCDATA)>
+		
+<!-- Atrybuty: ID, IDREF -->		
+		
+<!ATTLIST type
+		type_id CDATA #REQUIRED>
+<!ATTLIST genre
+		genre_id ID #REQUIRED>
+<!ATTLIST country
+		c_id ID #REQUIRED>
+<!ATTLIST item
+		no ID #REQUIRED
+		genre_idref IDREF #REQUIRED
+		c_idref IDREF #REQUIRED
+		type_id CDATA #REQUIRED>

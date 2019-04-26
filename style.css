@@ -1,0 +1,153 @@
+
+watchingLibrary {
+	font-family: Verdana;
+	text-align: center;
+	background-color: AliceBlue;
+	border-right:24vh solid MediumVioletRed;
+	border-left:24vh solid MediumVioletRed;
+}
+
+author {
+	display: block;
+	background-color: AliceBlue;
+}
+
+description {
+	display: block;
+	font-size: 20pt;
+	text-align: center;
+	background-color: AliceBlue;
+	color: MediumVioletRed;
+	text-decoration: overline; 
+}
+
+types {
+	display: block;
+}
+
+genres {
+	display: block;	
+}
+
+item {
+	display: block;
+	border: 4% solid black;
+    border-collapse: collapse;
+	background-color: #FFF0F5;
+	width: 40%;
+	/*tabela*/
+	margin-left: 28%;
+	padding: 2%;
+	margin-top: 3%;
+	margin-bottom:3%;
+	border-radius: 4%;
+	border-style: dotted;
+	border-width: 5px;
+	border-color: MediumVioletRed;
+	text-align: left;
+	
+}
+
+title {
+	display: list-item;
+	list-style-image: url('cat4.png');
+	padding-left:10%;
+	margin-left:5%;
+	margin-right:15%;
+	margin-bottom: 5%;
+	font-style: italic;
+	text-align: center;
+}
+	
+date{
+	display: block;
+
+}
+
+creator{
+	display: block;
+}
+
+ageLimit{
+	display: block;
+}
+
+awards{
+	display: block;
+}
+
+rate{
+	display: block;
+}
+
+time{
+	display: block;
+}
+
+parts{
+	display: block;
+}
+
+release{
+	display: block;
+}
+
+item:hover{
+	background-color: #ffd7e4;
+}
+
+time:before {
+	content: "Time: ";
+}
+seasons:before {
+	content: "Number of seasons: ";
+}
+episodes:before {
+	content: "Number of episodes: ";
+}
+year:before {
+	content: "Date: ";
+}
+genres:before {
+	content: "Genres: ";
+}
+creator:before {
+	content: "Creator: ";
+}
+ageLimit:before {
+	content: "Age limit: ";
+}
+ageLimit:after {
+	content: " years";
+}
+wins:before {
+	content: "Awards: ";
+}
+wins:after {
+	content: " wins, "
+}
+nominations:after {
+	content: " nominations"
+}
+rate:before {
+	content: "Rate: ";
+}
+types:before {
+	content: "Types: ";
+}
+release:before {
+	content: "Date: ";
+}
+countries:before {
+	content: "Countries: ";
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: MediumVioletRed;
+    color: White;
+    text-align: center;
+}
